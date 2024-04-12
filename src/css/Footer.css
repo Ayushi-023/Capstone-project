@@ -1,0 +1,32 @@
+footer section{
+    padding: 5px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.company-info img{
+    width: 150px;
+    height: 75px;
+}
+.company-info p{
+    width: 320px;
+}
+footer h3{
+    font-size: 18px;
+}
+footer ul{
+    padding: 0;
+    list-style: none;
+}
+footer ul li{
+    padding: 8px 0;
+}
+@media screen and (max-width: 768px) {
+    footer section{
+        padding: 10px 8%;
+        flex-direction: column;
+    }
+    .company-info p{
+        width: 100%;
+    }
+}

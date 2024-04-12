@@ -1,0 +1,72 @@
+nav{
+    z-index: 10001;
+}
+.Navbar{
+    padding: 10px 13%;
+    width: auto;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+nav a>img{
+    width: 180px;
+    height: 90px;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1em;
+}
+nav ul li a{
+    color: #000000;
+}
+nav ul li a:hover{
+    text-decoration: underline solid #495E57;
+}
+.menu-icons{
+    display: none;
+    cursor: pointer;
+}
+div #bars{
+    font-size: 20px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .menu-icons {
+        display: block;
+    }
+    .nav-links {
+        display: none; /* Hide menu links by default on smaller screens */
+    }
+    .nav-links.visible {
+        display: flex;
+        flex-direction: column;
+        position:  absolute; /* Change position to fixed */
+        top: 0;
+        left: 0;
+        margin-top: 23%;
+        width: 92.7%;
+        height: 430px; /* Cover the entire screen */
+        background-color: #495E57;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 10000; /* Set a higher z-index */
+    }
+    .nav-links.visible li {
+        padding: 1em 0; /* Add padding to each link */
+    }
+    nav ul li a {
+        color: #fff;
+    }
+    .bars {
+        background: #333333;
+    }
+}
